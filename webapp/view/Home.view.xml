@@ -1,0 +1,20 @@
+<mvc:View controllerName="com.kayky.kanyeapplication.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" titleAlignment="Center">
+        <content>
+            <VBox id="vb1" class="sapUiSmallMargin">
+                <FlexBox id="fb1" height="100px" alignItems="Start" justifyContent="Center">
+                        <FeedContent id="fcquote"
+                            contentText="{Quote>/quote}"
+                            class="sapUiSmallMargin"
+                        />
+                </FlexBox>
+
+                <FlexBox id="fb2" height="100px" alignItems="Start" justifyContent="Center">
+                    <Button text="Generate Quote" press="onPress" id="btgeneratep" ></Button>
+                </FlexBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
